@@ -27,6 +27,10 @@
             "description": "Simple Bot-name. Do not use Modified Text..",
             "required": true
         },
+        "SCARY_BABY": {
+            "description": "Start Image For Bot.",
+            "required": true
+        },
         "UPDATE_CHNL": {
             "description": "Your Updates Channel without @",
             "required": true
