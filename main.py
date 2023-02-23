@@ -223,18 +223,10 @@ ABOUT_BTN = [
 ]
 SOURCE_READ = f"**ʜᴇʏ, ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ᴏғ [{BOT_NAME}](https://t.me/{BOT_USERNAME}) ɪs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ.**\n**ᴘʟᴇᴀsᴇ ғᴏʀᴋ ᴛʜᴇ ʀᴇᴘᴏ & ɢɪᴠᴇ ᴛʜᴇ sᴛᴀʀ ✯**\n**──────────────────**\n**ʜᴇʀᴇ ɪs ᴛʜᴇ [sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://github.com/TeamScary/Ai-ChatBot)**\n**──────────────────**\n**ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ ᴄᴏɴᴛᴀᴄᴛ ᴀᴛ [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/{SUPPORT_GRP}).\n<b>||©️ @{OWNER_USERNAME}||</b>"
 
-ABOUT_READ = f"""
-**➻ [{BOT_NAME}](https://t.me/{BOT_USERNAME}) ɪs ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛ-ʙᴏᴛ.**
-**➻ [{BOT_NAME}](https://t.me/{BOT_USERNAME}) ʀᴇᴘʟɪᴇs ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ᴛᴏ ᴀ ᴜsᴇʀ.**
-**➻ ʜᴇʟᴘs ʏᴏᴜ ɪɴ ᴀᴄᴛɪᴠᴀᴛɪɴɢ ʏᴏᴜʀ ɢʀᴏᴜᴘs.**
-**➻ ᴡʀɪᴛᴛᴇɴ ɪɴ [ᴘʏᴛʜᴏɴ](https://www.python.org) ᴡɪᴛʜ [ᴍᴏɴɢᴏ-ᴅʙ](https://www.mongodb.com) ᴀs ᴀ ᴅᴀᴛᴀʙᴀsᴇ**
-**──────────────**
-**➻ ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ғᴏʀ ɢᴇᴛᴛɪɴɢ ʙᴀsɪᴄ ʜᴇʟᴩ ᴀɴᴅ ɪɴғᴏ ᴀʙᴏᴜᴛ [{BOT_NAME}](https://t.me/{BOT_USERNAME})**
-"""
 @bot.on_message(filters.command(["start", "aistart", f"start@{BOT_USERNAME}"]))
 async def restart(client, m: Message):
     if m.chat.type == "private":
-        await asyncio.sleep(2)
+        await asyncio.sleep(1)
         await m.reply_photo(
             photo = f"https://te.legra.ph/file/8fb5db5f6d4b17934b85a.jpg",
             caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ [{BOT_NAME}](t.me/{BOT_USERNAME})**\n**➻ ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────**\n**➻ ᴜsᴀɢᴇ /chatbot [ᴏɴ/ᴏғғ]**\n<b>||๏ ʜɪᴛ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ғᴏʀ ʜᴇʟᴘ||</b>""",
@@ -271,13 +263,6 @@ async def cb_handler(Client, query: CallbackQuery):
                    text = SOURCE_READ,
                    reply_markup = InlineKeyboardMarkup(BACK),
                    disable_web_page_preview = True,
-
-     )
-    elif query.data == "ABOUT":
-            await query.message.edit(
-                    text = ABOUT_READ,
-                    reply_markup = InlineKeyboardMarkup(ABOUT_BTN),
-                    disable_web_page_preview=True,
      )
     elif query.data == "ADMINS":
             await query.message.edit(
@@ -377,7 +362,7 @@ async def ping(client, message: Message):
     ms = (datetime.now()-start).microseconds / 1000
     await message.reply_photo(
         photo=f"https://te.legra.ph/file/8fb5db5f6d4b17934b85a.jpg",
-        caption=f"нey вαву!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ιѕ alιve 🥀 αnd worĸιng ғιne wιтн a pιng oғ\n➥ `{ms}` ms\n\n<b>||мαdє ωιтн ❣️ ву [Developer](https://t.me/{OWNER_USERNAME})||</b>",
+        caption=f"нey вαву!!\n**[{BOT_NAME}](t.me/{BOT_USERNAME})** ɪs ᴀʟɪᴠᴇ 🥀ᴀɴᴅ ᴡᴏʀᴋɪɴɢ ᴡɪᴛʜ ᴀ ᴘɪɴɢ ᴏғ\n➥ `{ms}` ms\n\n<b>||ᴍᴀᴅᴇ ᴡɪᴛʜ ❣️ ву [Developer](https://t.me/{OWNER_USERNAME})||</b>",
         reply_markup=InlineKeyboardMarkup(PNG_BTN),
     )
 
