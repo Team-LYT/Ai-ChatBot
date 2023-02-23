@@ -238,7 +238,7 @@ async def restart(client, m: Message):
         await m.reply_photo(
             photo = f"https://te.legra.ph/file/8fb5db5f6d4b17934b85a.jpg",
             caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ [{BOT_NAME}](t.me/{BOT_USERNAME})**\n**➻ ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────**\n**➻ ᴜsᴀɢᴇ /chatbot [ᴏɴ/ᴏғғ]**\n<b>||๏ ʜɪᴛ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ғᴏʀ ʜᴇʟᴘ||</b>""",
-            reply_markup=InlineKeyboardMarkup(DEV_OP),
+            reply_markup=InlineKeyboardMarkup(LAKSH_OP),
         )
         await add_served_user(m.from_user.id)
     else:
@@ -264,7 +264,7 @@ async def cb_handler(Client, query: CallbackQuery):
     elif query.data == "BACK":
             await query.message.edit(
                   text = START,
-                  reply_markup=InlineKeyboardMarkup(DEV_OP),
+                  reply_markup=InlineKeyboardMarkup(LAKSH_OP),
      )
     elif query.data == "SOURCE":
             await query.message.edit(
