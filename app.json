@@ -1,0 +1,52 @@
+{
+    "name": "Crush 💖",   
+    "logo": "https://te.legra.ph/file/8fb5db5f6d4b17934b85a.jpg", 
+    "env": {
+        "BOT_TOKEN": {
+            "description": "telegram bot token here",
+            "required": true
+        },        
+        "MONGO_URL": {
+            "description": "mongo db url here",
+            "required": true
+        },
+        "BOT_USERNAME": {
+            "description": "telegram bot username here without @",
+            "required": true
+        },
+        "OWNER_USERNAME": {
+            "description": "Owner Username without @",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Your Id Here! For Eg: 54326909.",
+            "required": true,
+            "value": "5776889746"
+        },
+        "BOT_NAME": {
+            "description": "Simple Bot-name. Do not use Modified Text..",
+            "required": true
+        },
+        "UPDATE_CHNL": {
+            "description": "Your Updates Channel without @",
+            "required": true
+        },
+        "SUPPORT_GRP": {
+            "description": "Your Support Group without @",
+            "required": true
+        },
+        "API_ID": {
+            "description": "telegram api id here",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "telegram api hash here",
+            "required": true
+        }
+    },
+    "addons": [
+        {
+            "plan": "heroku-postgresql"
+        }
+    ]
+}
