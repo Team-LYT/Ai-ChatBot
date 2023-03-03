@@ -13,7 +13,7 @@
 <p align="center"><a href="https://t.me/ywr_crush_bot"> <img src="https://img.shields.io/badge/CHECK-Demo%20Robot-black?style=for-the-badge&logo=Telegram" width="220" height="39"/></a></p>
 
 ## ʀᴇᴘᴏ sᴛᴀᴛs
-<a href="https://github.com/TeamScary/Ai-ChatBot"><img src="https://github-readme-stats.vercel.app/api/pin/?username=TeamScary&repo=Crush&theme=chartreuse-dark"></a>
+<a href="https://github.com/NomoreLakshya/Ai-ChatBot"><img src="https://github-readme-stats.vercel.app/api/pin/?username=NomoreLakshya&repo=Ai-ChatBot&theme=chartreuse-dark"></a>
 
 ### sᴜᴘᴘᴏʀᴛ
 <p align="center"><a href="https://t.me/Chat_ixz"> <img src="https://img.shields.io/badge/JOIN-SUPPORT%20GROUP-black?style=for-the-badge&logo=Telegram" width="220" height="38.5"/></a></p>
